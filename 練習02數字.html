@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 製作隨機數字 function，提供最小整數和最大整數，回傳一個區間內的隨機整數
+    const rand = (min, max) => {
+      // 150~200
+      // 中間區間有50
+      let a = Math.round(Math.random() * (max - min)) + min
+      return a
+    }
+    console.log(rand(50, 52))
+
+    // 利用迴圈確認是否數字在50~52之間
+    for (let i = 0; i < 100; i++) {
+      console.log(rand(50, 52))
+    }
+  </script>
+</body>
+
+</html>
